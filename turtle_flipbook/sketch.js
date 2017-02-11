@@ -1,6 +1,4 @@
-var duuude;
 var dudeX = 450
-var duuudeWidth = 4608;
 var aspectRatio = 4608 / 3072;
 
 // preloads all five images
