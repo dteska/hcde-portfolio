@@ -1,8 +1,158 @@
- @charset "UTF-8";
-/* CSS Document */
-
-h1 {font-size:46px; font-weight:bold; font-family:'Roboto', Helevetica, sans-serif; color:#666; padding:0; margin:0;}
-h2 {font-size:24px; font-weight:bold; font-family:'Roboto', Helevetica, sans-serif; color:#666; padding:0; margin:0;}
-p, ul li a, ul li {font-size:16px; font-family:'Roboto', Helvetica, sans-serif; color:#666;}
-p a {font-size:16px; font-family:'Roboto', Helvetica, sans-serif; color:#ff0000;}
-header {padding:150px 0 5px; border-bottom: 1px solid #333; margin-bottom:5px;}
+  /* CSS Document */
+  /* Base styles regardless of screen styles (mobile first) ----------- */
+  
+  h1 {
+    font-size: 46px;
+    font-weight: bold;
+    font-family: 'Roboto', Helevetica, sans-serif;
+    color: #666;
+    padding: 0;
+    margin: 0;
+  }
+  
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Roboto', Helevetica, sans-serif;
+    color: #666;
+    padding: 10px 0 0;
+    margin: 0;
+  }
+  
+  p,
+  ul li a,
+  ul li {
+    font-size: 16px;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    color: #666;
+  }
+  
+  p a {
+    font-size: 16px;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    color: #ff0000;
+  }
+  
+  #projectLinks {
+    padding: 0;
+  }
+  
+  #projectLinks li {
+    list-style-type: none;
+  }
+  
+  #projectLinks li a {
+    background-color: #e3e3e3;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    color: #666666;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 2%;
+    width: 96%;
+    float: left;
+    display: block;
+    border: 1px solid #d5d5d5;
+  }
+  
+  #projectLinks li a:hover {
+    background-color: #4078c0;
+    color: #fff;
+  }
+  
+  header {
+    margin: 50px 10px 5px;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 5px;
+  }
+  
+  #description {
+    width: 300px;
+    margin: 10px 10px 15px;
+  }
+  
+  body {
+    margin: 0 auto;
+    width: 320px;
+  }
+  #projectWork {
+    min-width:600px;
+  }
+  #projectWork h1 {
+    margin-top:10px;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    /* For desktop and large format: */
+    body {
+      width: 98%;
+      min-width: 98%;
+      margin: 0 auto;
+    }
+    #projectWork {
+      width:980px;
+      min-width:980px;
+      margin:0 auto;
+    }
+    header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 40%;
+      min-width: 200px;
+      display: block;
+      z-index: 1;
+      padding: 14px 0 11px 5px;
+      margin: 0;
+      border: 0;
+      background: #ffffff;
+    }
+    #description {
+      position: absolute;
+      width: 60%;
+      min-width: 500px;
+      min-height: 70px;
+      display: block;
+      z-index: 1;
+      top: 0;
+      right: 0px;
+      background: #ffffff;
+      padding: 0 20px;
+    }
+    #projectListing {
+      margin: 90px 0 0;
+    }
+    #projectLinks ul {
+      width: 90%;
+      margin: 0;
+      float: left;
+      display: block;
+    }
+    #projectLinks li a {
+      padding: 20% 2%;
+      width: 28%;
+      max-width: 33%;
+      text-align: center;
+    }
+    #scoobybg {
+      background-image: url(scooby-bg.png);
+    }
+    #monstabg {
+      background-image: url(monsta-bg.png);
+    }
+    #digitizebg {
+      background-image: url(digitize-bg.png);
+    }
+    #creativity1bg {
+      background-image: url(creativity1-bg.png);
+    }
+    #creativity2bg {
+      background-image: url(creativity2-bg.png);
+    }
+    #practicebg {
+      background-image: url(practice-bg.png);
+    }
+    #robotbg {
+      background-image: url(robot-bg.png);
+    }
+  }
